@@ -1,1 +1,1 @@
-Usage java -jar ./Java.jar <Path to log file>
+Usage java -jar ./Java.jar *Path to log file*
