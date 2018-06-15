@@ -3,7 +3,7 @@ package ru.yakovlevdmv.parser;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
-public class Process {
+public class Method {
 
     private int ID;
     private String Name;
@@ -11,7 +11,7 @@ public class Process {
     private LocalDateTime timeOut;
     private int time;
 
-    public Process() {
+    public Method() {
 
     }
 
@@ -58,7 +58,7 @@ public class Process {
 
     @Override
     public String toString() {
-        return "Process{" +
+        return "Method{" +
                 "ID=" + ID +
                 ", Name='" + Name + '\'' +
                 ", timeIn=" + timeIn +
