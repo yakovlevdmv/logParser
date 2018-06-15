@@ -9,16 +9,10 @@ public class Process {
     private String Name;
     private LocalDateTime timeIn;
     private LocalDateTime timeOut;
-    private long time;
+    private int time;
 
     public Process() {
-    }
 
-    public Process(int ID, String name, LocalDateTime timeIn, LocalDateTime timeOut) {
-        this.ID = ID;
-        Name = name;
-        this.timeIn = timeIn;
-        this.timeOut = timeOut;
     }
 
     public int getID() {
@@ -51,7 +45,15 @@ public class Process {
 
     public void setTimeOut(LocalDateTime timeOut) {
         this.timeOut = timeOut;
-        this.time = ChronoUnit.MILLIS.between(timeIn, timeOut);
+        this.time = (int)ChronoUnit.MILLIS.between(timeIn, timeOut);
+    }
+
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
     }
 
     @Override
